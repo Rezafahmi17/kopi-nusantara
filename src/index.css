@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #111111;
+  background: #FFF3D8;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: #FFF3D8;
+  background-image:
+    linear-gradient(#1111110f 2px, transparent 2px),
+    linear-gradient(90deg, #1111110f 2px, transparent 2px),
+    radial-gradient(circle at 12% 10%, #FF5DA255 0 9rem, transparent 9.2rem),
+    radial-gradient(circle at 92% 18%, #55C7FF55 0 10rem, transparent 10.2rem),
+    radial-gradient(circle at 74% 88%, #FFE14D66 0 12rem, transparent 12.2rem);
+  background-size: 32px 32px, 32px 32px, auto, auto, auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+input,
+textarea,
+select {
+  color: #111111;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(17, 17, 17, 0.48);
+}
+
+.section-padding {
+  @apply px-5 sm:px-8 lg:px-12 xl:px-20;
+}
+
+.container-max {
+  @apply mx-auto max-w-7xl;
+}
+
+.glass-card {
+  @apply border-2 border-coffee-dark bg-white shadow-neo;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.neo-card {
+  @apply border-2 border-coffee-dark bg-white shadow-neo transition duration-200;
+}
+
+.neo-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 10px 10px 0 #111111;
+}
+
+.neo-button {
+  @apply inline-flex items-center justify-center gap-2 border-2 border-coffee-dark bg-coffee-amber px-5 py-3 font-extrabold text-coffee-dark shadow-neo-sm transition duration-200;
+}
+
+.neo-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 #111111;
+}
+
+.neo-button-dark {
+  @apply inline-flex items-center justify-center gap-2 border-2 border-coffee-dark bg-coffee-dark px-5 py-3 font-extrabold text-white shadow-neo-sm transition duration-200;
+}
+
+.neo-button-dark:hover {
+  @apply bg-neo-pink text-coffee-dark;
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 #111111;
+}
+
+.neo-tag {
+  @apply inline-flex items-center gap-2 border-2 border-coffee-dark bg-neo-yellow px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-coffee-dark shadow-neo-sm;
+}
+
+.neo-input {
+  @apply w-full border-2 border-coffee-dark bg-white px-4 py-3 font-bold text-coffee-dark shadow-neo-sm outline-none transition;
+}
+
+.neo-input:focus {
+  @apply bg-neo-yellow;
+}
+
+.neo-section-title {
+  @apply font-heading text-4xl font-black leading-tight text-coffee-dark sm:text-5xl;
+}
+
+.brutal-dots {
+  background-image: radial-gradient(#111111 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF3D8;
+  border-left: 2px solid #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF7A00;
+  border: 2px solid #111111;
+}
+
+@media (max-width: 640px) {
+  .section-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .container-max {
+    max-width: 100%;
+  }
+}
+
+/* Mobile responsive safety layer */
+.no-scrollbar::-webkit-scrollbar,
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar,
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.safe-wrap {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-size: 24px 24px, 24px 24px, auto, auto, auto;
+  }
+
+  .neo-section-title {
+    font-size: 2rem;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+  }
+
+  .neo-tag {
+    max-width: 100%;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+    line-height: 1.25;
+    flex-wrap: wrap;
+  }
+
+  .neo-button,
+  .neo-button-dark {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 0.86rem;
+  }
+
+  .shadow-neo,
+  .shadow-neo-sm,
+  .shadow-neo-lg,
+  .shadow-neo-xl,
+  .shadow-warm,
+  .neo-card,
+  .glass-card {
+    box-shadow: 4px 4px 0 #111111 !important;
+  }
+
+  .neo-card:hover,
+  .neo-button:hover,
+  .neo-button-dark:hover {
+    transform: none;
+    box-shadow: 4px 4px 0 #111111 !important;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
