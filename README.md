@@ -6,7 +6,7 @@
 
 ## Tentang Proyek
 
-**Kopi Nusantara** adalah aplikasi web full-stack untuk manajemen kedai kopi yang memungkinkan pelanggan memesan langsung dari meja menggunakan QR Code. Dibangun dengan **React + Vite** di sisi frontend dan **Node.js + MySQL** di sisi backend, menghadirkan pengalaman pemesanan digital yang mulus tanpa perlu menginstal aplikasi.
+**Kopi Nusantara** adalah aplikasi web full-stack untuk manajemen kedai kopi yang memungkinkan pelanggan memesan langsung dari meja menggunakan QR Code. Dibangun dengan **React + Vite** di sisi frontend dan **Node.js + MySQL** di sisi backend.
 
 ### Desain Neobrutalism UI
 
