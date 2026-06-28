@@ -1,6 +1,6 @@
 # Kopi Nusantara
 
-> **Aplikasi web pemesanan kopi berbasis QR Code** untuk kedai kopi modern dengan desain Neobrutalism UI yang berani dan mencolok.
+> **Aplikasi web pemesanan kopi berbasis QR Code** untuk kedai kopi modern dengan desain Neobrutalism UI.
 
 ---
 
