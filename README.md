@@ -109,7 +109,7 @@ cd kopi-nusantara
 
 ### 2. Setup Database MySQL
 
-1. Buka **phpMyAdmin** atau MySQL client favorit Anda
+1. Buka **phpMyAdmin** atau MySQL
 2. Import file skema database:
    ```
    database/kopi_nusantara.sql
@@ -129,7 +129,7 @@ PORT=3001
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_USER=root
-DB_PASSWORD=        # Isi dengan password MySQL Anda
+DB_PASSWORD=        
 DB_NAME=kopi_nusantara
 ```
 
@@ -153,20 +153,8 @@ npm start
 
 > **Atau** gunakan file `JALANKAN.bat` (Windows) untuk menjalankan secara otomatis.
 
-### 7. Akses Aplikasi
 
-Buka browser dan kunjungi:
-
-```
-http://localhost:3001
-```
-
-> **Akses dari HP:** Sambungkan HP ke WiFi yang sama dengan laptop, lalu buka `http://[IP-Laptop]:3001`  
-> Contoh: `http://192.168.1.5:3001`
-
----
-
-## Mode Development (Frontend Only)
+## Mode Development (Frontend)
 
 Untuk pengembangan frontend dengan hot-reload:
 
@@ -252,17 +240,6 @@ order_items  -- Detail item dalam setiap pesanan (relasi ke menus & orders)
 expenses     -- Catatan pengeluaran operasional kedai
 ```
 
-### Data Menu Awal (22 item)
-
-| Kategori | Contoh Menu |
-|---|---|
-| Kopi Panas | Espresso, Americano, Cappuccino, Latte, V60 Drip Aceh Gayo, Kopi Toraja |
-| Kopi Dingin | Es Kopi Susu, Cold Brew, Iced Caramel Latte, Dirty Coffee, Kopi Aren |
-| Non-Kopi | Coklat Panas, Teh Tarik, Strawberry Smoothie, Lemon Squash |
-| Makanan | Croissant, Banana Bread, Roti Bakar, Nasi Goreng Kampung, Sandwich Ayam |
-
----
-
 ## Script NPM
 
 ```bash
@@ -277,7 +254,7 @@ npm run server   # Alias untuk npm start
 
 ## Deploy ke Netlify
 
-Proyek sudah dikonfigurasi untuk deploy ke **Netlify** (frontend only):
+Proyek sudah dikonfigurasi untuk deploy ke **Netlify** (frontend):
 
 1. Push kode ke GitHub
 2. Hubungkan repository di [Netlify Dashboard](https://app.netlify.com/)
