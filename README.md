@@ -1,35 +1,35 @@
-# ☕ Kopi Nusantara
+# Kopi Nusantara
 
 > **Aplikasi web pemesanan kopi berbasis QR Code** untuk kedai kopi modern dengan desain Neobrutalism UI yang berani dan mencolok.
 
 ---
 
-## 📖 Tentang Proyek
+## Tentang Proyek
 
 **Kopi Nusantara** adalah aplikasi web full-stack untuk manajemen kedai kopi yang memungkinkan pelanggan memesan langsung dari meja menggunakan QR Code. Dibangun dengan **React + Vite** di sisi frontend dan **Node.js + MySQL** di sisi backend, menghadirkan pengalaman pemesanan digital yang mulus tanpa perlu menginstal aplikasi.
 
-### ✨ Desain Neobrutalism UI
+### Desain Neobrutalism UI
 
 Antarmuka mengadopsi gaya **Neobrutalism** — border tebal, warna kontras yang berani, bayangan solid, dan tipografi yang kuat — untuk memberikan kesan yang unik dan modern.
 
 ---
 
-## 🚀 Fitur Utama
+## Fitur Utama
 
 | Fitur | Deskripsi |
 |---|---|
-| 🏠 **Landing Page** | Halaman utama dengan Hero, About, Menu, Gallery, Testimonials, dan CTA |
-| 📋 **Menu Digital** | Tampilan menu lengkap: Kopi Panas, Kopi Dingin, Non-Kopi, dan Makanan |
-| 📱 **Pemesanan via QR** | Pelanggan scan QR → diarahkan ke halaman order sesuai nomor meja otomatis |
-| 🔲 **QR Simulator** | Admin bisa generate & cetak QR Code untuk setiap meja |
-| 📊 **Admin Dashboard** | Panel lengkap untuk pantau pesanan masuk, kelola menu, dan riwayat transaksi |
-| 💰 **Manajemen Pengeluaran** | Catat dan lacak pengeluaran operasional kedai |
-| 🔐 **Autentikasi Admin** | Login session-based untuk akses panel admin |
-| 📱 **Responsif** | Tampilan optimal di desktop maupun perangkat mobile |
+| **Landing Page** | Halaman utama dengan Hero, About, Menu, Gallery, Testimonials, dan CTA |
+| **Menu Digital** | Tampilan menu lengkap: Kopi Panas, Kopi Dingin, Non-Kopi, dan Makanan |
+| **Pemesanan via QR** | Pelanggan scan QR, diarahkan ke halaman order sesuai nomor meja otomatis |
+| **QR Simulator** | Admin bisa generate & cetak QR Code untuk setiap meja |
+| **Admin Dashboard** | Panel lengkap untuk pantau pesanan masuk, kelola menu, dan riwayat transaksi |
+| **Manajemen Pengeluaran** | Catat dan lacak pengeluaran operasional kedai |
+| **Autentikasi Admin** | Login session-based untuk akses panel admin |
+| **Responsif** | Tampilan optimal di desktop maupun perangkat mobile |
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 ### Frontend
 - **[React 18](https://reactjs.org/)** — Library UI utama
@@ -52,17 +52,17 @@ Antarmuka mengadopsi gaya **Neobrutalism** — border tebal, warna kontras yang 
 
 ---
 
-## 📁 Struktur Folder
+## Struktur Folder
 
 ```
 kopi-nusantara/
-├── 📁 database/
+├── database/
 │   └── kopi_nusantara.sql      # Skema & data awal database MySQL
-├── 📁 netlify/
+├── netlify/
 │   └── functions/              # Netlify serverless functions
-├── 📁 public/                  # Aset publik statis
-├── 📁 src/
-│   ├── 📁 components/          # Komponen UI React
+├── public/                     # Aset publik statis
+├── src/
+│   ├── components/             # Komponen UI React
 │   │   ├── AdminDashboard.jsx  # Panel admin (pesanan, menu, laporan)
 │   │   ├── AdminLogin.jsx      # Halaman login admin
 │   │   ├── CustomerOrder.jsx   # Halaman pemesanan pelanggan (via QR)
@@ -75,8 +75,8 @@ kopi-nusantara/
 │   │   ├── Testimonials.jsx    # Seksi ulasan pelanggan
 │   │   ├── Navbar.jsx          # Navigasi utama
 │   │   └── Footer.jsx          # Footer halaman
-│   ├── 📁 data/                # Data statis aplikasi
-│   ├── 📁 utils/               # Fungsi utilitas (storage, export, dll.)
+│   ├── data/                   # Data statis aplikasi
+│   ├── utils/                  # Fungsi utilitas (storage, export, dll.)
 │   ├── App.jsx                 # Komponen root & sistem routing hash-based
 │   ├── main.jsx                # Entry point React
 │   └── index.css               # Konfigurasi Tailwind & custom styles
@@ -91,7 +91,7 @@ kopi-nusantara/
 
 ---
 
-## ⚙️ Cara Menjalankan Secara Lokal
+## Cara Menjalankan Secara Lokal
 
 ### Prasyarat
 
@@ -166,7 +166,7 @@ http://localhost:3001
 
 ---
 
-## 🔧 Mode Development (Frontend Only)
+## Mode Development (Frontend Only)
 
 Untuk pengembangan frontend dengan hot-reload:
 
@@ -176,11 +176,11 @@ npm run dev
 
 Akses di: `http://localhost:5173`
 
-> ⚠️ Pada mode dev, fitur yang memerlukan database (pesanan, menu dari API) perlu server backend berjalan terpisah dengan `npm start`.
+> Catatan: Pada mode dev, fitur yang memerlukan database (pesanan, menu dari API) perlu server backend berjalan terpisah dengan `npm start`.
 
 ---
 
-## 🗺️ Routing Aplikasi
+## Routing Aplikasi
 
 Aplikasi menggunakan sistem **hash-based routing**:
 
@@ -195,7 +195,7 @@ Aplikasi menggunakan sistem **hash-based routing**:
 
 ---
 
-## 🔐 Akses Admin
+## Akses Admin
 
 Untuk mengakses **Admin Dashboard**, gunakan kredensial berikut:
 
@@ -204,11 +204,11 @@ Untuk mengakses **Admin Dashboard**, gunakan kredensial berikut:
 | Username | `admin` |
 | Password | `kopi123` |
 
-> ℹ️ Sesi admin menggunakan `sessionStorage` — akan logout otomatis saat tab/browser ditutup.
+> Sesi admin menggunakan `sessionStorage` — akan logout otomatis saat tab/browser ditutup.
 
 ---
 
-## 🌐 REST API Endpoints
+## REST API Endpoints
 
 Server berjalan di `http://localhost:3001` dengan endpoint berikut:
 
@@ -241,7 +241,7 @@ Server berjalan di `http://localhost:3001` dengan endpoint berikut:
 
 ---
 
-## 🗄️ Struktur Database
+## Struktur Database
 
 Database `kopi_nusantara` terdiri dari 4 tabel utama:
 
@@ -256,14 +256,14 @@ expenses     -- Catatan pengeluaran operasional kedai
 
 | Kategori | Contoh Menu |
 |---|---|
-| ☕ Kopi Panas | Espresso, Americano, Cappuccino, Latte, V60 Drip Aceh Gayo, Kopi Toraja |
-| 🧊 Kopi Dingin | Es Kopi Susu, Cold Brew, Iced Caramel Latte, Dirty Coffee, Kopi Aren |
-| 🍵 Non-Kopi | Coklat Panas, Teh Tarik, Strawberry Smoothie, Lemon Squash |
-| 🍛 Makanan | Croissant, Banana Bread, Roti Bakar, Nasi Goreng Kampung, Sandwich Ayam |
+| Kopi Panas | Espresso, Americano, Cappuccino, Latte, V60 Drip Aceh Gayo, Kopi Toraja |
+| Kopi Dingin | Es Kopi Susu, Cold Brew, Iced Caramel Latte, Dirty Coffee, Kopi Aren |
+| Non-Kopi | Coklat Panas, Teh Tarik, Strawberry Smoothie, Lemon Squash |
+| Makanan | Croissant, Banana Bread, Roti Bakar, Nasi Goreng Kampung, Sandwich Ayam |
 
 ---
 
-## 📦 Script NPM
+## Script NPM
 
 ```bash
 npm run dev      # Jalankan dev server Vite (frontend)
@@ -275,7 +275,7 @@ npm run server   # Alias untuk npm start
 
 ---
 
-## 🚀 Deploy ke Netlify
+## Deploy ke Netlify
 
 Proyek sudah dikonfigurasi untuk deploy ke **Netlify** (frontend only):
 
@@ -285,16 +285,14 @@ Proyek sudah dikonfigurasi untuk deploy ke **Netlify** (frontend only):
 4. Publish directory: `dist`
 5. Konfigurasi sudah ada di `netlify.toml`
 
-> ⚠️ Untuk fitur penuh (database), diperlukan backend server terpisah.
+> Catatan: Untuk fitur penuh (database), diperlukan backend server terpisah.
 
 ---
 
-## 📄 Lisensi
+## Lisensi
 
 Proyek ini dibuat untuk keperluan pembelajaran dan pengembangan.
 
 ---
 
-<div align="center">
-  <p>Dikembangkan dengan ☕ oleh <strong>Reza Fahmi Alkhamdani</strong></p>
-</div>
+Dikembangkan oleh **Reza Fahmi Alkhamdani**
